@@ -65,15 +65,15 @@
     source ~/.zshrc \
 
     echo "\n-> installing software from homebrew casks:"
-    echo "   google-chrome lastpass mysqlworkbench slack sublime-text the-unarchiver whatsapp"
+    echo "   google-chrome lastpass slack sublime-text the-unarchiver"
     {
-        brew cask install authy
-        brew cask install docker
-        brew cask install google-chrome
-        brew cask install lastpass
-        brew cask install pg-commander
-        brew cask install sublime-text
-        brew cask install the-unarchiver
+        brew install --cask authy
+        brew install --cask docker
+        brew install --cask google-chrome
+        brew install --cask lastpass
+        brew install --cask pg-commander
+        brew install --cask sublime-text
+        brew install --cask the-unarchiver
         pipx ensurepath && source ~/.zshrc
     } \
     && echo "\n-> installation from homebrew casks successfull <-\n"
